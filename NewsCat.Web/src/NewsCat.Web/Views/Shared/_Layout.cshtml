@@ -76,6 +76,18 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+    <script>
+        System.config({
+            packages: {
+                'app': { defaultExtension: 'js' },
+                'lib': { defaultExtension: 'js' },
+            }
+        });
+
+        System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
