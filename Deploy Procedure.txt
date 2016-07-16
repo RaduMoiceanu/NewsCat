@@ -1,0 +1,6 @@
+Update the database
+-------------------
+
+Open the Package Manager Console and run the command:
+
+PM> Update-Database -Verbose -Context FeedDataContext

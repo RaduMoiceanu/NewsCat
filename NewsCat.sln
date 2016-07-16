@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{77F19B19-2FA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{501CEC30-D04C-48C1-AC6E-012F399E051E}"
 	ProjectSection(SolutionItems) = preProject
+		Deploy Procedure.txt = Deploy Procedure.txt
 		NewsCat.Web\global.json = NewsCat.Web\global.json
 	EndProjectSection
 EndProject
