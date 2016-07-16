@@ -38,7 +38,7 @@ namespace NewsCat.Web.Data
             var roleTasks = new List<Task>();
             string[] roles = new string[] { Constants.ROLE_OWNER, Constants.ROLE_ADMIN, Constants.ROLE_USERS };
             foreach (string role in roles)
-                if (!dataContext.Roles.Any(r => r.Name.Equals(role, StringComparison.InvariantCultureIgnoreCase)))
+                if (!dataContext.Roles.Any(r => role.Equals(r.Name, StringComparison.InvariantCultureIgnoreCase)))
                     roleTasks.Add(roleStore.CreateAsync(new IdentityRole(role) { NormalizedName = role.ToUpperInvariant() }));
             Task.WaitAll(roleTasks.ToArray());
 
