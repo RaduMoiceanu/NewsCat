@@ -1,4 +1,5 @@
 ﻿import {Component} from 'angular2/core';
+import "rxjs/Rx";
 
 @Component({
     selector: 'news-cat-app',
@@ -8,6 +9,6 @@ export class AppComponent {
     Title: string;
 
     constructor() {
-        this.Title = 'Hello World';
+        this.Title = 'Hello World 115';
     }
 }
