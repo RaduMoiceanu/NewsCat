@@ -1,6 +1,8 @@
 Update the database
 -------------------
 
-Open the Package Manager Console and run the command:
+1) Make sure PowerShell for Visual Studio 2015 is installed.
+
+2) Open the Package Manager Console and run the command:
 
 PM> Update-Database -Verbose -Context FeedDataContext
